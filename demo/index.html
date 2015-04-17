@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Flickr Image Search</title>
+<link title="Search" rel="stylesheet" href="Search.css" type="text/css" />
+<script type="text/javascript">
+function validateForm()
+{
+	var SearchBox=document.getElementById("query").value;
+	if (SearchBox == null || SearchBox == "")
+	  {
+	  	alert("Please input the words you want to search for!");
+	  	return false;
+	  }
+}
+</script>
+</head>
+<body>
+<form name="search" action="http://picso.org:8861/UPitts/ir/ir.php" method="GET" onsubmit="return validateForm()">
+<table>
+	<tr>
+		<td><img alt="image/pittsburgh.png" src="image/pittsburgh.png"></td>
+		<td><h1>Flickr Image Search</h1>
+			<p>Non-English to English Flickr Image Search</p></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><p class="s"><input name="query" id="query" type="search"></p>
+			<button type="submit" class="button blue">Find</button><br></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>
+			<p class="example">
+			Please enter term in any non-english language. e.g.<br>
+			Traditional Chinese: 美國總統歐巴馬 (U.S. President Barack Obama) <br>
+			Simplified Chinese: 新西兰 (New Zealand) <br>
+			Japanese: バスケットボール (Basketball) <br>
+			Korean: 인삼 닭고기 수프 (Ginseng chicken soup) </p>
+		</td>
+	</tr>
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+    <head>
+        <style type="text/css">
+            body {
+                font-family: tahoma;
+                margin: 0px;
+                text-align: center;
+            }
+            div#container {margin-top: 160px;}
+            div#banner {background-color:#000000; height:33px;}
+            #header {height:50px;
+                    margin-right: auto;
+                    margin-left: auto;
+                    vertical-align: middle;
+                    line-height: 50px;}
+            div#search_bar {height:300px;
+                        margin-right: auto;
+                        margin-left: auto;
+                        vertical-align: middle;
+                        line-height: 300px;
+                        }
+            div#footer {position: absolute;bottom: 0;width: 100%;background-color:#E6E6E6; clear:both; text-align: center;}
+            
+        </style>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+<body>
+
+    <div id="banner">
+    </div>
+
+    <div id="container">
+        <div id="search" class="search_bar"> 
+            
+            <img src="images/logo.jpg"/>
+            
+
+
+        
+            <form id="myform" action="methodservlet"> 
+            <input class="input" placeholder=" What would you like to search..." type="text" name="keyWords" id="search" style="width:450px; height:35px; border-radius:20px; outline: none; padding-left: 10px;"/> 
+            <input type="hidden" name="methodName" value="search"/>
+            <input type="submit" value="" id="submit_Btn" style="background-image: url(images/ba0be854b3.png) ; margin-top: -100px; background-repeat: no-repeat; background-size: 30px 30px; width:40px; height:40px; border-radius:10px; position: relative; top: 10px;outline: none; cursor: pointer;"> 
+            <span class="search_ico"></span> 
+
+            <p align = "center">&nbsp;</p>
+
+            <select name="language" style="width:150px; height:30px; border-radius:20px; outline: none; padding-left: 10px;">
+            <option value="CHINESE_SIMPLIFIED">简体中文</option>
+            <option value="CHINESE_TRADITIONAL">繁體中文</option>
+            <option value="FRENCH">français</option>
+            <option value="DUTCH">Deutsch</option>
+            <option value="RUSSIAN">русский</option>
+            <option value="SPANISH">español</option>
+            <option value="ITALIAN">lingua italiana</option>
+            </select>
+            </form>
+        </div>
+    </div>
+  
+    <div id="footer">Group One:
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        Yeqiu Xiong
+        &nbsp;&nbsp;&nbsp;
+        Cong Liu
+        &nbsp;&nbsp;&nbsp;
+        Yi Ju</div>
+
+</body>
+
+</html>
+
